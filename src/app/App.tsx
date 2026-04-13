@@ -2,8 +2,10 @@ import { motion } from 'motion/react';
 import bottleImage from '../imports/C33FE85E-97D1-4E55-B439-8CF056393BE8-1.PNG';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import fruitFlavorsImage from '../../images/Sovány organic fruit beverages assortment.png';
-import poolsideImage from '../../images/Tropical refreshment at sunset.png';
-import bottleCollectionImage from '../../images/Sovány drinks at an elegant soirée.png';
+import bottomImage from '../../images/Refreshing Sovány moments in summer settings.png';
+import agencyLogo from '../../images/dushawne_logo.png';
+import collage1 from '../imports/collage_1.jpg';
+import collage2 from '../imports/collage_2.jpg';
 
 export default function App() {
   return (
@@ -16,7 +18,9 @@ export default function App() {
         className="px-12 py-8 border-b border-[#D4A574]/20"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="font-['Great_Vibes'] text-4xl text-[#D4A574]">Sovány</div>
+          <div className="relative flex items-center h-16 w-64">
+            <img src={agencyLogo} alt="Dushawne Mckinley & Associates" className="absolute left-0 w-[400px] max-w-none h-auto object-contain brightness-0 opacity-80" />
+          </div>
           <div className="font-['Outfit'] text-xs tracking-[0.2em] text-[#8B7355] uppercase">
             Advisory Pitch: CEO & Owners
           </div>
@@ -43,6 +47,9 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
+              <div className="mb-6">
+                <span className="font-['Playfair_Display'] text-6xl tracking-widest text-[#2B2520] uppercase font-bold">SOVÁNY</span>
+              </div>
               <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-8 uppercase">
                 Strategic Marketing Proposal
               </p>
@@ -181,11 +188,11 @@ export default function App() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="relative"
             >
-              <div className="overflow-hidden rounded-sm shadow-2xl max-h-[80vh]">
+              <div className="overflow-hidden rounded-sm shadow-2xl flex justify-center bg-[#FAF8F3]/50 p-4">
                 <img
                   src={fruitFlavorsImage}
                   alt="Sovány fruit flavors with fresh ingredients"
-                  className="w-full h-auto max-h-[80vh] object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-auto max-h-[80vh] object-contain hover:scale-105 transition-transform duration-700 rounded-sm"
                 />
               </div>
               <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-6 rounded-sm">
@@ -259,11 +266,11 @@ export default function App() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="mb-20"
           >
-            <div className="overflow-hidden rounded-sm shadow-2xl max-h-[80vh]">
+            <div className="overflow-hidden rounded-sm shadow-2xl flex justify-center bg-white/50 p-4">
               <img
-                src={bottleCollectionImage}
+                src={collage1}
                 alt="Sovány glass bottle collection showcasing all three flavors"
-                className="w-full h-auto max-h-[80vh] object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
           </motion.div>
@@ -421,12 +428,12 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden rounded-sm max-h-[70vh]"
+            className="overflow-hidden rounded-sm flex justify-center p-4 bg-[#2B2520]/50"
           >
             <img
-              src={poolsideImage}
+              src={collage2}
               alt="Golden hour poolside with Sovány glass bottles"
-              className="w-full h-auto max-h-[70vh] object-cover"
+              className="w-full h-auto object-contain rounded-sm"
             />
           </motion.div>
         </div>
@@ -592,11 +599,11 @@ export default function App() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl max-h-[70vh]">
+              <div className="overflow-hidden rounded-sm shadow-2xl flex justify-center bg-white/50 p-4">
                 <img
-                  src={poolsideImage}
+                  src={bottomImage}
                   alt="Sovány glass bottles in premium lifestyle setting"
-                  className="w-full h-full max-h-[70vh] object-cover"
+                  className="w-full h-auto max-h-[70vh] object-contain rounded-sm"
                 />
               </div>
             </motion.div>
@@ -724,7 +731,9 @@ export default function App() {
       {/* Footer */}
       <footer className="py-10 px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E] border-t border-[#D4A574]/10">
         <div className="container mx-auto max-w-7xl flex justify-between items-center">
-          <div className="font-['Great_Vibes'] text-3xl text-[#D4A574]">Sovány</div>
+          <div className="relative flex items-center h-12 w-64">
+            <img src={agencyLogo} alt="Dushawne Mckinley & Associates" className="absolute left-0 w-[300px] max-w-none h-auto object-contain brightness-0 invert opacity-80" />
+          </div>
           <div className="font-['Outfit'] text-xs tracking-wider text-[#8B7355]">
             <span className="text-[#D4A574]">Internal Proposal</span> · Confidential © 2026
           </div>
