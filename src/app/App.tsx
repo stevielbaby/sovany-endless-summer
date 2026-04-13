@@ -15,20 +15,20 @@ export default function App() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="px-12 py-8 border-b border-[#D4A574]/20"
+        className="px-4 sm:px-12 py-5 sm:py-8 border-b border-[#D4A574]/20"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="relative flex items-center h-16 w-64">
-            <img src={agencyLogo} alt="Dushawne Mckinley & Associates" className="absolute left-0 w-[400px] max-w-none h-auto object-contain brightness-0 opacity-80" />
+          <div className="relative flex items-center h-10 sm:h-16 w-40 sm:w-64">
+            <img src={agencyLogo} alt="Dushawne Mckinley & Associates" className="absolute left-0 w-[250px] sm:w-[400px] max-w-none h-auto object-contain brightness-0 opacity-80" />
           </div>
-          <div className="font-['Outfit'] text-xs tracking-[0.2em] text-[#8B7355] uppercase">
-            Advisory Pitch: CEO & Owners
+          <div className="font-['Outfit'] text-[10px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] text-[#8B7355] uppercase hidden xs:block sm:block">
+            Advisory Pitch: CEO &amp; Owners
           </div>
         </div>
       </motion.header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-24">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-16 sm:py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-[#FAF8F3] via-[#FFF9EF] to-[#F5EBD9]" />
 
         {/* Decorative golden glow */}
@@ -39,8 +39,8 @@ export default function App() {
           className="absolute top-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-[#D4A574] blur-3xl"
         />
 
-        <div className="container mx-auto px-12 relative z-10">
-          <div className="grid grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
+        <div className="container mx-auto px-4 sm:px-12 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center max-w-7xl mx-auto">
             {/* Left: Text */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -48,17 +48,17 @@ export default function App() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="mb-6">
-                <span className="font-['Playfair_Display'] text-6xl tracking-widest text-[#2B2520] uppercase font-bold">SOVÁNY</span>
+                <span className="font-['Playfair_Display'] text-4xl sm:text-5xl md:text-6xl tracking-widest text-[#2B2520] uppercase font-bold">SOVÁNY</span>
               </div>
               <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-8 uppercase">
                 Strategic Marketing Proposal
               </p>
-              <h1 className="font-['Playfair_Display'] text-7xl leading-[0.95] text-[#2B2520] mb-10">
+              <h1 className="font-['Playfair_Display'] text-5xl sm:text-6xl md:text-7xl leading-[0.95] text-[#2B2520] mb-10">
                 Endless<br />
                 Summer<br />
                 Exclusive
               </h1>
-              <p className="font-['Outfit'] text-xl leading-relaxed text-[#6B5A47] max-w-lg mb-8">
+              <p className="font-['Outfit'] text-base sm:text-xl leading-relaxed text-[#6B5A47] max-w-lg mb-8">
                 An advisory pitch from specialty marketing: introducing a limited-edition glass bottle to trigger unmatched hype, exclusivity, and prestige this summer.
               </p>
               <div className="flex items-center gap-4 font-['Outfit'] text-sm text-[#8B7355]">
@@ -114,9 +114,9 @@ export default function App() {
       </section>
 
       {/* Brand Evolution */}
-      <section className="py-32 px-12 bg-white">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -126,7 +126,7 @@ export default function App() {
               <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
                 The Marketing Strategy
               </p>
-              <h2 className="font-['Playfair_Display'] text-4xl leading-tight text-[#2B2520] mb-8">
+              <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl leading-tight text-[#2B2520] mb-8">
                 Creating the Hype:<br />
                 A Cult-Favorite Summer
               </h2>
@@ -142,12 +142,12 @@ export default function App() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="bg-gradient-to-br from-[#FAF8F3] to-[#F5EBD9] p-12"
+              className="bg-gradient-to-br from-[#FAF8F3] to-[#F5EBD9] p-8 md:p-12"
             >
               <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
                 The Advisor Vision
               </p>
-              <h2 className="font-['Playfair_Display'] text-4xl leading-tight text-[#2B2520] mb-8">
+              <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl leading-tight text-[#2B2520] mb-8">
                 Selling the Dream:<br />
                 Rare by Design
               </h2>
@@ -162,25 +162,25 @@ export default function App() {
       </section>
 
       {/* Real Fruit Philosophy */}
-      <section className="py-32 px-12 bg-gradient-to-br from-[#FFF9EF] to-[#FAF8F3]">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-gradient-to-br from-[#FFF9EF] to-[#FAF8F3]">
         <div className="container mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="text-center mb-20"
+            className="text-center mb-12 md:mb-20"
           >
-            <h2 className="font-['Playfair_Display'] text-5xl text-[#2B2520] mb-6 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl text-[#2B2520] mb-6 leading-tight">
               Savor the Spirit<br />
               <span className="text-[#D4A574]">of an Endless Summer</span>
             </h2>
-            <p className="font-['Outfit'] text-lg text-[#6B5A47] max-w-2xl mx-auto">
+            <p className="font-['Outfit'] text-base md:text-lg text-[#6B5A47] max-w-2xl mx-auto">
               Sovány is made with real fruit—hence the hint of color that catches golden hour light perfectly. Glass bottles let you see the beauty of what's inside, turning each flavor into a visual story.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -238,19 +238,19 @@ export default function App() {
       </section>
 
       {/* The Sovány Difference in Glass */}
-      <section className="py-32 px-12 bg-white">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-white">
         <div className="container mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="text-center mb-20"
+            className="text-center mb-12 md:mb-20"
           >
             <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
               Competitive Positioning
             </p>
-            <h2 className="font-['Playfair_Display'] text-5xl text-[#2B2520] mb-6 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl text-[#2B2520] mb-6 leading-tight">
               Still the Only Brand<br />
               That is Both Organic & Gluten Free
             </h2>
@@ -275,7 +275,7 @@ export default function App() {
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -313,10 +313,10 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-gradient-to-br from-[#2B2520] to-[#3D342E] p-16 text-center rounded-sm"
+            className="bg-gradient-to-br from-[#2B2520] to-[#3D342E] p-8 md:p-16 text-center rounded-sm"
           >
             <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-3 gap-12 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 mb-12">
                 <div>
                   <h4 className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-4 uppercase">Honest</h4>
                   <p className="font-['Outfit'] text-sm leading-relaxed text-[#E5DDD0]">Authentic and honest. Never overly branded. Straightforward and real.</p>
@@ -340,26 +340,26 @@ export default function App() {
       </section>
 
       {/* Why This Works for Sovány */}
-      <section className="py-32 px-12 bg-gradient-to-br from-[#FAF8F3] to-[#FFF9EF]">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-gradient-to-br from-[#FAF8F3] to-[#FFF9EF]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-20"
+            className="mb-12 md:mb-20"
           >
             <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
               Strategic Rationale
             </p>
-            <h2 className="font-['Playfair_Display'] text-5xl text-[#2B2520] mb-4 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl text-[#2B2520] mb-4 leading-tight">
               Why Glass Bottles Work<br />
               for Sovány
             </h2>
             <div className="w-24 h-px bg-[#D4A574] mt-8" />
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">
             {[
               {
                 num: '01',
@@ -388,7 +388,7 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: idx * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="relative p-10 bg-white shadow-md hover:shadow-xl transition-shadow duration-500 rounded-sm"
+                className="relative p-6 md:p-10 bg-white shadow-md hover:shadow-xl transition-shadow duration-500 rounded-sm"
               >
                 <div className="absolute top-6 right-6 font-['Playfair_Display'] text-5xl text-[#D4A574]/10">
                   {item.num}
@@ -406,7 +406,7 @@ export default function App() {
       </section>
 
       {/* Visual Story: Bottle Meets Fruit */}
-      <section className="py-24 px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E]">
+      <section className="py-16 md:py-24 px-4 sm:px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E]">
         <div className="container mx-auto max-w-7xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -415,7 +415,7 @@ export default function App() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="text-center mb-12"
           >
-            <h2 className="font-['Playfair_Display'] text-4xl text-[#FAF8F3] mb-4 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-2xl sm:text-3xl md:text-4xl text-[#FAF8F3] mb-4 leading-tight">
               Golden Hour. Poolside Ritual.<br />Endless Summer.
             </h2>
             <p className="font-['Outfit'] text-sm text-[#D4A574] tracking-wider">
@@ -440,19 +440,19 @@ export default function App() {
       </section>
 
       {/* Rollout Framework */}
-      <section className="py-32 px-12 bg-white">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-white">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-20"
+            className="mb-12 md:mb-20"
           >
             <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
               Advisor Recommended Rollout
             </p>
-            <h2 className="font-['Playfair_Display'] text-5xl text-[#2B2520] mb-6 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl text-[#2B2520] mb-6 leading-tight">
               Executing the<br />Hype Strategy
             </h2>
             <p className="font-['Outfit'] text-lg text-[#6B5A47] max-w-3xl">
@@ -512,19 +512,19 @@ export default function App() {
       </section>
 
       {/* Success Signals */}
-      <section className="py-32 px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E]">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-20"
+            className="mb-12 md:mb-20"
           >
             <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
               Measuring Impact
             </p>
-            <h2 className="font-['Playfair_Display'] text-5xl text-[#FAF8F3] mb-6 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl text-[#FAF8F3] mb-6 leading-tight">
               How We Will Know It is Working
             </h2>
             <p className="font-['Outfit'] text-lg text-[#C9B8A0]">
@@ -532,7 +532,7 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-10">
             {[
               {
                 title: 'Organic Storytelling',
@@ -557,7 +557,7 @@ export default function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: idx * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="p-10 border border-[#D4A574]/20 hover:border-[#D4A574]/40 transition-colors duration-500 rounded-sm bg-[#2B2520]/50"
+                className="p-6 md:p-10 border border-[#D4A574]/20 hover:border-[#D4A574]/40 transition-colors duration-500 rounded-sm bg-[#2B2520]/50"
               >
                 <h3 className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-4 uppercase">
                   {item.title}
@@ -572,19 +572,19 @@ export default function App() {
       </section>
 
       {/* Business Case */}
-      <section className="py-32 px-12 bg-gradient-to-br from-[#FAF8F3] to-[#FFF9EF]">
+      <section className="py-16 md:py-32 px-4 sm:px-12 bg-gradient-to-br from-[#FAF8F3] to-[#FFF9EF]">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-20"
+            className="mb-12 md:mb-20"
           >
             <p className="font-['Outfit'] text-xs tracking-[0.3em] text-[#D4A574] mb-6 uppercase">
               Financial Opportunity
             </p>
-            <h2 className="font-['Playfair_Display'] text-5xl text-[#2B2520] mb-6 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl md:text-5xl text-[#2B2520] mb-6 leading-tight">
               The Premium Tier Economics
             </h2>
             <p className="font-['Outfit'] text-lg text-[#6B5A47] max-w-3xl">
@@ -592,7 +592,7 @@ export default function App() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-20 items-center mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center mb-16 md:mb-24">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -650,26 +650,26 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-white p-16 rounded-sm shadow-lg"
+            className="bg-white p-8 md:p-16 rounded-sm shadow-lg"
           >
-            <h3 className="font-['Playfair_Display'] text-4xl text-[#2B2520] mb-16 text-center">
+            <h3 className="font-['Playfair_Display'] text-2xl sm:text-3xl md:text-4xl text-[#2B2520] mb-10 md:mb-16 text-center">
               Low-Risk Investment, High-Value Return
             </h3>
-            <div className="grid grid-cols-3 gap-16">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-16">
               <div className="text-center">
-                <div className="font-['Playfair_Display'] text-6xl text-[#D4A574] mb-6">$2.50</div>
+                <div className="font-['Playfair_Display'] text-4xl md:text-6xl text-[#D4A574] mb-6">$2.50</div>
                 <p className="font-['Outfit'] text-sm text-[#6B5A47] leading-relaxed">
                   Unit cost per premium glass bottle at scale (est.)
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-['Playfair_Display'] text-6xl text-[#D4A574] mb-6">$8-12</div>
+                <div className="font-['Playfair_Display'] text-4xl md:text-6xl text-[#D4A574] mb-6">$8-12</div>
                 <p className="font-['Outfit'] text-sm text-[#6B5A47] leading-relaxed">
                   Premium retail price point vs. $3-4 for cans
                 </p>
               </div>
               <div className="text-center">
-                <div className="font-['Playfair_Display'] text-6xl text-[#D4A574] mb-6">85%</div>
+                <div className="font-['Playfair_Display'] text-4xl md:text-6xl text-[#D4A574] mb-6">85%</div>
                 <p className="font-['Outfit'] text-sm text-[#6B5A47] leading-relaxed">
                   Consumer preference for sustainable glass over plastic
                 </p>
@@ -685,7 +685,7 @@ export default function App() {
       </section>
 
       {/* Closing Statement */}
-      <section className="py-40 px-12 bg-gradient-to-br from-[#FAF8F3] via-[#FFF9EF] to-[#F5EBD9] relative overflow-hidden">
+      <section className="py-20 md:py-40 px-4 sm:px-12 bg-gradient-to-br from-[#FAF8F3] via-[#FFF9EF] to-[#F5EBD9] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0Q0QTU3NCIgc3Ryb2tlLW9wYWNpdHk9IjAuMDUiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30" />
 
         <div className="container mx-auto max-w-4xl text-center relative z-10">
@@ -699,12 +699,12 @@ export default function App() {
               <div className="w-1 h-24 bg-gradient-to-b from-transparent via-[#D4A574] to-transparent mx-auto mb-12" />
             </div>
 
-            <h2 className="font-['Playfair_Display'] text-6xl text-[#2B2520] mb-10 leading-[1.1]">
+            <h2 className="font-['Playfair_Display'] text-3xl sm:text-5xl md:text-6xl text-[#2B2520] mb-10 leading-[1.1]">
               We are not just selling bottles.<br />
               We are selling the dream.
             </h2>
 
-            <p className="font-['Outfit'] text-2xl text-[#6B5A47] mb-16 max-w-2xl mx-auto leading-relaxed">
+            <p className="font-['Outfit'] text-lg sm:text-xl md:text-2xl text-[#6B5A47] mb-12 md:mb-16 max-w-2xl mx-auto leading-relaxed">
               Endless Summer is our vehicle to propel Sovány into the highest tier of lifestyle brands.<br />
               This glass bottle is the key to unlocking that exclusive market.
             </p>
@@ -729,10 +729,10 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E] border-t border-[#D4A574]/10">
-        <div className="container mx-auto max-w-7xl flex justify-between items-center">
-          <div className="relative flex items-center h-12 w-64">
-            <img src={agencyLogo} alt="Dushawne Mckinley & Associates" className="absolute left-0 w-[300px] max-w-none h-auto object-contain brightness-0 invert opacity-80" />
+      <footer className="py-8 sm:py-10 px-4 sm:px-12 bg-gradient-to-br from-[#2B2520] to-[#3D342E] border-t border-[#D4A574]/10">
+        <div className="container mx-auto max-w-7xl flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+          <div className="relative flex items-center h-10 sm:h-12 w-48 sm:w-64">
+            <img src={agencyLogo} alt="Dushawne Mckinley & Associates" className="absolute left-0 w-[200px] sm:w-[300px] max-w-none h-auto object-contain brightness-0 invert opacity-80" />
           </div>
           <div className="font-['Outfit'] text-xs tracking-wider text-[#8B7355]">
             <span className="text-[#D4A574]">Internal Proposal</span> · Confidential © 2026
