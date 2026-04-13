@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import bottleImage from '../imports/C33FE85E-97D1-4E55-B439-8CF056393BE8-1.PNG';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import fruitFlavorsImage from '../../images/Sovány organic fruit beverages assortment.png';
-import bottomImage from '../../images/Refreshing Sovány moments in summer settings.png';
+import bottomImage from "../../images/refreshing_summer_moments.png";
 import agencyLogo from '../../images/dushawne_logo.png';
 import collage1 from '../imports/collage_1.jpg';
 import collage2 from '../imports/collage_2.jpg';
