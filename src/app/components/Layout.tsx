@@ -14,6 +14,7 @@ const brandLinks = [
 const investorLinks = [
   { to: '/culture-engine', label: 'Culture Engine' },
   { to: '/investment', label: 'Investment' },
+  { to: '/partners', label: 'Partners' },
   { to: '/leadership', label: 'Leadership' },
 ];
 

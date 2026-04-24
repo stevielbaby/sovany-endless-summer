@@ -305,10 +305,10 @@ export default function Investment() {
                 Request the Deck
               </a>
               <Link
-                to="/leadership"
+                to="/partners"
                 className="inline-block font-['Outfit'] text-xs tracking-[0.2em] uppercase text-[#2B2520] border border-[#2B2520]/30 px-8 py-4 hover:border-[#D4A574] hover:text-[#D4A574] transition-all duration-300"
               >
-                Meet the Leadership →
+                Meet the team →
               </Link>
             </div>
           </motion.div>

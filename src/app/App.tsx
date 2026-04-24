@@ -7,6 +7,7 @@ import Activations from './pages/Activations';
 import CultureEngine from './pages/CultureEngine';
 import Investment from './pages/Investment';
 import Leadership from './pages/Leadership';
+import Partners from './pages/Partners';
 import Brand from './pages/Brand';
 import Gallery from './pages/Gallery';
 
@@ -30,6 +31,7 @@ function AppRoutes() {
           <Route path="/culture-engine" element={<CultureEngine />} />
           <Route path="/investment" element={<Investment />} />
           <Route path="/leadership" element={<Leadership />} />
+          <Route path="/partners" element={<Partners />} />
           <Route path="/brand" element={<Brand />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
